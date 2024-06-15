@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>App Cibertec</span>
+    &nbsp;&nbsp;
+    <button mat-raised-button (click)="irHome()">Home</button>&nbsp;&nbsp;
+    <button mat-raised-button (click)="irCurso()">Curso</button>&nbsp;&nbsp;
+    <button mat-raised-button (click)="irPost()">Post</button>&nbsp;&nbsp;
+    <button mat-raised-button (click)="irEstado()">Estado</button>&nbsp;&nbsp;
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button (click)="logout()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>power_settings_new</mat-icon>
+    </button>
+  </mat-toolbar>
+<hr />
+<router-outlet />
+
